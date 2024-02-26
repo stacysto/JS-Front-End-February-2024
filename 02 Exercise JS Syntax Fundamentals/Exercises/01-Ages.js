@@ -1,40 +1,24 @@
 function solve(number) {
-    let output;
-    if (number >= 0 && number <= 2) {
-        output = 'baby';
-        
-    } 
-    else 
-       if (number >= 3 && number <= 13) {
-        output = 'child';
-       
-       } 
-       else 
-          if(number >= 14 && number <= 19){
-             output = 'teenager';
-            
-           }
-          else 
-              if (number >= 20 && number <= 65){
-                 output = 'adult'; 
-                
-              }
-              else 
-                 if ( number >= 66){
-                  output = 'elder'; 
-                
-                }
-                 else{
-                    console.log('out of bounds');
-        return(1);
-                    }
+   let output;
 
+   if (number >= 66) {
+      output = 'elder';
+   } else if (number >= 20) {
+      output = 'adult';
+   } else if (number >= 14) {
+      output = 'teenager';
+   } else if (number >= 3) {
+      output = 'child';
+   } else if (number >= 0) {
+      output = 'baby';
+   } else {
+      output = 'out of bounds';
+   }
 
-console.log(output);
-return(0);
+   console.log(output);
+
 }
 
-let errorCode;
+solve(1);
 
-errorCode=solve(3);
 
