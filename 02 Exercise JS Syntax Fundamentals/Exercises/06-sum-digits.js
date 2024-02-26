@@ -12,11 +12,11 @@ function solve(number){
 // Solve with strings
 function solveWithStrings(number){
     let textNumber = number.toString();
-    let firstDigitDigit;
+    let firstDigit;
     let sum = 0;
     for(let i = 0; i<textNumber.length; i++){
-firstDigitDigit = textNumber[i];
-sum = sum + Number(firstDigitDigit);
+firstDigit = textNumber[i];
+sum = sum + Number(firstDigit);
     }
     console.log(sum)
 }
